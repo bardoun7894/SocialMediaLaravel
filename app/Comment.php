@@ -10,11 +10,12 @@ class Comment extends Model
         'user_id',
         'body',
         'commentable_id',
-        'commentable_type'
+        'commentable_type',
+        'likes'
     ];
     public function author()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, "user_id", "id");
     }
     public function post()
     {
