@@ -18,3 +18,5 @@ Route::resource('comments', 'Api\\CommentController');
 
 Route::post('register','Api\\AuthController@register');
 Route::post('login','Api\\AuthController@login');
+
+Route::post('posts/{post}/comment','Api\\PostController@comment');

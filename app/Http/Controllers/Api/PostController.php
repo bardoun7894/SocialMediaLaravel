@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Comment;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CommentRequest;
 use App\Http\Requests\PostRequest;
 use App\Http\Resources\PostResource;
 use App\Post;
@@ -59,7 +61,18 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+         $this->authorize('update',$post);
+        if($request->has('status')){
+            $post->status = $request->status;
+        }
+        if($request->has('likes')){
+            $post->likes = $request->likes;
+        }
+        if($request->has('body')){
+            $post->body = $request->body;
+        }
+        $post->save();
+        return new PostResource($post);
     }
 
     /**
@@ -69,7 +82,24 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Post $post)
-    {  //
+    {
+        $this->authorize('delete',$post);
+        Post::destroy($post->id);
+        return response()->json([
+            'message'=>'the post has deleted'
+        ]);
 
+    }
+    public function comment(CommentRequest $request,Post $post){
+        Comment::create([
+            'user_id'=>auth()->user()->id,
+            'body'=>$request->body,
+            'commentable_id'=>$post->id,
+            'commentable_type'=>Post::class,
+            'likes'=>$request->likes
+
+            ]);
+        $post->refresh();
+        return new PostResource($post);
     }
 }
