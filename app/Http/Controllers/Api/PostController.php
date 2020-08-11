@@ -88,7 +88,6 @@ class PostController extends Controller
         return response()->json([
             'message'=>'the post has deleted'
         ]);
-
     }
     public function comment(CommentRequest $request,Post $post){
         Comment::create([
