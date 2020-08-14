@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e311bb38-c613-4485-9085-8caed251d0cc" name="Default Changelist" comment="add comments to post">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php" afterDir="false" />
+    <list default="true" id="e311bb38-c613-4485-9085-8caed251d0cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +137,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -148,6 +149,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e311bb38-c613-4485-9085-8caed251d0cc" name="Default Changelist" comment="" />
@@ -155,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596548776682</updated>
-      <workItem from="1596548778528" duration="23744000" />
+      <workItem from="1596548778528" duration="24601000" />
     </task>
     <task id="LOCAL-00001" summary="make auth user with access token">
       <created>1596635023823</created>
@@ -171,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596669744058</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modified PostController.php">
+      <created>1597148726145</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597148726145</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,32 +191,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="make auth user with access token" />
     <MESSAGE value="add comments to post" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comments to post" />
+    <MESSAGE value="modified PostController.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified PostController.php" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1596669754462">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1597148725620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1596669754462" />
-    <state width="1493" height="413" key="GridCell.Tab.0.bottom" timestamp="1596548902171">
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1597148725620" />
+    <state width="1493" height="413" key="GridCell.Tab.0.bottom" timestamp="1597185048637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="413" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596548902171" />
-    <state width="1493" height="413" key="GridCell.Tab.0.center" timestamp="1596548902171">
+    <state width="1493" height="413" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597185048637" />
+    <state width="1493" height="413" key="GridCell.Tab.0.center" timestamp="1597185048637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="413" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596548902171" />
-    <state width="1493" height="413" key="GridCell.Tab.0.left" timestamp="1596548902171">
+    <state width="1493" height="413" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597185048637" />
+    <state width="1493" height="413" key="GridCell.Tab.0.left" timestamp="1597185048637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="413" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596548902171" />
-    <state width="1493" height="413" key="GridCell.Tab.0.right" timestamp="1596548902171">
+    <state width="1493" height="413" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597185048637" />
+    <state width="1493" height="413" key="GridCell.Tab.0.right" timestamp="1597185048637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="413" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596548902171" />
+    <state width="1493" height="413" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597185048637" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1596669774542">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1596669774542" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1597402175602">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1597402175602" />
   </component>
 </project>
